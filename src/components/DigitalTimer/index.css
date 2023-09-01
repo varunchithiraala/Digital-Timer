@@ -1,0 +1,230 @@
+/* Write your CSS here */
+.digital-timer-app-container {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #ffffff, #cffcf1, #defafe);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .digital-timer-app-container {
+        background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+    }
+}
+
+.digital-timer-heading {
+    color: #0f172a;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .digital-timer-heading {
+        font-size: 48px;
+    }
+}
+
+.digital-timer-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .digital-timer-container {
+        flex-direction: row;
+        width: 85%;
+        max-width: 1140px;
+    }
+}
+
+.digital-timer-display-section {
+    background-image: url("https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+    .digital-timer-display-section {
+        height: 320px;
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .digital-timer-display-section {
+        height: 450px;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .digital-timer-display-section {
+        height: 600px;
+        width: 600px;
+    }
+}
+
+.elapsed-time-container {
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+    .elapsed-time-container {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .elapsed-time-container {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.elapsed-time-heading {
+    color: #00d9f5;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .elapsed-time-heading {
+        font-size: 48px;
+    }
+}
+
+.elapsed-timer-state {
+    color: #1e293b;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .elapsed-timer-state {
+        font-size: 24px;
+    }
+}
+
+.digital-timer-controls-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.timer-control-section {
+    display: flex;
+    align-items: center;
+}
+
+.timer-control-button {
+    background-color: transparent;
+    border: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.timer-control-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 992px) {
+    .timer-control-icon {
+        height: 36px;
+        width: 36px;
+        margin-right: 12px;
+    }
+}
+
+.timer-control-label {
+    color: #1e293b;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+    .timer-control-label {
+        font-size: 32px;
+    }
+}
+
+.timer-limit-control-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-limit-label {
+    color: #1e293b;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.timer-limit-control-section {
+    display: flex;
+    align-items: center;
+}
+
+.timer-limit-button {
+    color: #1e293b;
+    background-color: transparent;
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 500;
+    border: none;
+    margin: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.timer-limit-value-container {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-limit-value {
+    text-align: center;
+    color: #1e293b;
+    background-image: linear-gradient(to right, #00f5a0, #00d9f5);
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+    width: 100px;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0;
+}
